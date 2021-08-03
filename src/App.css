@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url('../../client/src/image/bgImg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+}
+.nav-item a{
+    text-decoration: none;
+    padding: 10px;
+    color: antiquewhite;
+    margin: 10px;
+}
+.nav-item a:hover{
+    border-bottom: 1px solid lightgray;
+}
+.navbar-bg{
+    background-image: linear-gradient(130deg, #0b0a36 0%, #2d77e7 100%);
+    height: 100px;
+}
+.findMoreBtn{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #623892, #322f6d);
+    padding: 10px;
+}
+.findMoreBtn:hover{
+    color: #fff;
+}
+.notice-img {
+    border-radius: 100px 0 100px 0;
+}
+.notice{
+    color:aliceblue;
+}
+.notice-container{
+    background-image: url('../../client/src/image/noticeBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.guaranteed-container{
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.presence-container{
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.business-payment-container{
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.card-img img{
+    width: 70px;
+}
+.social-icon img{
+    width: 50px;
+    margin: 0 10px;
+}
+.cards{
+    background-color: #6149b8;
+    margin: 40px;
+    padding: 40px;
+    min-height: 300px;
+    color: rgb(213, 214, 216);
+    font-weight: bold;
+    border-radius: 40px 0px;
+}
+.admin-container{
+    min-height: 100vh;
+    background-color: #2d77e7;
+    
+}
+.side-nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+.side-nav a:hover {
+    color:rgb(149, 152, 155);
+}
+.sidebar-container{
+    margin: -12px;
+    min-height: 700px;
+    background-color: rgb(4, 4, 83);
+    position: fixed;
+    top: 0;
+}
+.business-title{
+    background-color:rgb(22, 83, 145);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 40px 0;
+}
+.contact-form-container{
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form input[type="text"]{
+    width: 50%;
+}
+.contact-form input[type="text"]{
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+    margin-top: -48px;
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
