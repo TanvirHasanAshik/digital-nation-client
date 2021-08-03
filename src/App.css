@@ -66,6 +66,14 @@ a{
     background-size: cover;
     min-height: 500px;
 }
+.blog-container{
+    color: aliceblue;
+    background-image: url('../../client/src/image/GuaranteedBg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
 .business-payment-container{
     color: aliceblue;
     background-image: url('../../client/src/image/GuaranteedBg.jpg');
@@ -134,10 +142,20 @@ a{
 form input[type="text"]{
     width: 50%;
 }
+form input[type="file"]{
+    width: 250px;
+}
 .contact-form input[type="text"]{
     width: 100%;
 }
-
+.blog-form textarea{
+    width: 50%;
+}
+.blog-img img{
+    width: 100%;
+    box-shadow: 5px 5px 5px lightgray;
+    border-radius: 10px;
+}
 .footer{
     margin-top: -48px;
     color: aliceblue;

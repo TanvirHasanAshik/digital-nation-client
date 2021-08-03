@@ -9,7 +9,7 @@ const qualityData = {
 };
 const GuaranteedQuality = () => {
     return (
-        <section className='guaranteed-container'>
+        <section className='guaranteed-container '>
             <div className="container">
                 <div className="row" >
                     <div className="col-md-6 mt-5 mb-5">

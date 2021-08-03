@@ -12,6 +12,8 @@ import BusinessPayment from './components/Positioning/BusinessPayment/BusinessPa
 import Recommended from './components/Admin/Recommended/Recommended';
 import Contacts from './components/Contacts/Contacts/Contacts';
 import Message from './components/Admin/Message/Message';
+import Blog from './components/Blog/Blog/Blog';
+import BlogControl from './components/Admin/BlogControl/BlogControl';
 export const UserContext = createContext();
 
 function App() {
@@ -44,6 +46,12 @@ function App() {
           </Route>
           <Route path="/message">
             <Message></Message>
+          </Route>
+          <Route path="/blogControl">
+            <BlogControl></BlogControl>
+          </Route>
+          <Route path="/blog">
+            <Blog></Blog>
           </Route>
         </Switch>
       </Router>

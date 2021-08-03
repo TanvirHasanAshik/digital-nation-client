@@ -12,7 +12,7 @@ const Sidebar = () => {
                 <Link to="/recommended"><FontAwesomeIcon icon={faWallet} /> RECOMMENDED</Link>
                 <Link to="/message"><FontAwesomeIcon icon={faEnvelope} /> MESSAGE</Link>
                 <Link to="/payment"><FontAwesomeIcon icon={faMoneyCheckAlt} /> PAYMENT</Link>
-                <Link to="/blog"><FontAwesomeIcon icon={faBlog} /> BLOG</Link>
+                <Link to="/blogControl"><FontAwesomeIcon icon={faBlog} /> BLOG</Link>
                 <Link to="/services"><FontAwesomeIcon icon={faTools} /> SERVICES</Link>
                 <Link to="/logout" className="pt-5 mt-5"><FontAwesomeIcon icon={faSignOutAlt} /> LOG OUT</Link>
             </div>
