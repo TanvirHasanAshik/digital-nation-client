@@ -9,6 +9,7 @@ body{
     background-size: cover;
     min-height: 100vh;
     opacity: 0.9;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -75,6 +76,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
+  
 }
 .presence-container{
     color: aliceblue;
@@ -104,6 +106,7 @@ a{
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 .card-img img{
     width: 70px;
@@ -191,7 +194,7 @@ form input[type="file"]{
 .login-form input[type="text"]{
     width: 100%;
 }
-img:hover {
+.card-img img:hover {
     animation: shake 0.5s;
     animation-iteration-count: .1s;
   }

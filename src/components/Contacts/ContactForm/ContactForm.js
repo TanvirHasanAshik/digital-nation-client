@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import phoneIcon from '../../../image/smartphone.png';
 import planeIcon from '../../../image/paper-plane.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ContactForm = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
     const today = new Date();
     const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
     const [message, setMessage] = useState({});
     const [successMessage, setSuccessMessage] = useState(false);
-
     message.date = date;
     message.time = time;
 
@@ -41,6 +47,7 @@ const ContactForm = () => {
             <div className="row">
                 {successMessage && <p className=" text-success text-center pt-5">Message Send Successfully</p>}
                 <div className="d-flex justify-content-center col-md-6 mt-5 pt-5">
+                        
                     <form onSubmit={handleSubmit} className="contact-form">
                         <div class="form-group pb-3">
                             <input onBlur={handleBlur} name="name" type="text" class="form-control" placeholder="Name" required />
@@ -62,7 +69,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="row mt-5 pt-5 pb-5 d-flex justify-content-center">
-                <div className="col-md-5 cards text-center">
+                <div data-aos="zoom-out-right" className="col-md-5 cards text-center">
                     <div className="card-img">
                         <img src={phoneIcon} alt="" />
                     </div>
@@ -71,7 +78,7 @@ const ContactForm = () => {
                         <p>01550005114 <span style={{ color: 'black' }} >or</span> 01970005114</p>
                     </div>
                 </div>
-                <div className="col-md-5 cards text-center">
+                <div data-aos="zoom-out-right" className="col-md-5 cards text-center">
                     <div className="card-img">
                         <img src={planeIcon} alt="" />
                     </div>
