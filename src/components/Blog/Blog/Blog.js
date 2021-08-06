@@ -18,9 +18,7 @@ const Blog = () => {
             <div className="blog-container">
                  {blogInfo.map( blog=> <BlogData key={blog._id} blog={blog} />)}
             </div>
-            
-
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     );
 };

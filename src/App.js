@@ -14,6 +14,10 @@ import Contacts from './components/Contacts/Contacts/Contacts';
 import Message from './components/Admin/Message/Message';
 import Blog from './components/Blog/Blog/Blog';
 import BlogControl from './components/Admin/BlogControl/BlogControl';
+import Portfolio from './components/Portfolio/Portfolio/Portfolio';
+import AddPortfolio from './components/Admin/AddPortfolio/AddPortfolio';
+import Login from './components/Login/Login/Login';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 export const UserContext = createContext();
 
 function App() {
@@ -29,29 +33,38 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin></Admin>
-          </Route>
-          <Route path="/positioning">
+          </PrivateRoute>
+          <PrivateRoute path="/positioning">
             <Positioning></Positioning>
-          </Route>
+          </PrivateRoute>
           <Route path="/business/recommended/:id">
             <BusinessPayment></BusinessPayment>
           </Route>
           <Route path="/recommended">
             <Recommended></Recommended>
           </Route>
-          <Route path="/contacts">
+          <PrivateRoute path="/contacts">
             <Contacts></Contacts>
-          </Route>
+          </PrivateRoute>
           <Route path="/message">
             <Message></Message>
           </Route>
           <Route path="/blogControl">
             <BlogControl></BlogControl>
           </Route>
-          <Route path="/blog">
+          <PrivateRoute path="/blog">
             <Blog></Blog>
+          </PrivateRoute>
+          <PrivateRoute path="/portfolio">
+            <Portfolio></Portfolio>
+          </PrivateRoute>
+          <Route path="/addPortfolio">
+            <AddPortfolio></AddPortfolio>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
         </Switch>
       </Router>

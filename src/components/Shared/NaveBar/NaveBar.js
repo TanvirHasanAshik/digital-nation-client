@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const NaveBar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const token = sessionStorage.getItem('token');
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-bg">
@@ -29,9 +32,6 @@ const NaveBar = () => {
                             </li>
                             <li class="nav-item">
                                 <Link to="/admin">ADMIN</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to="/login">LOGIN</Link>
                             </li>
                         </ul>
                     </div>
