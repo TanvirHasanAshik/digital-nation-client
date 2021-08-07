@@ -26,7 +26,7 @@ const ContactForm = () => {
     }
 
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/clientMessage', {
+        fetch('https://mighty-reaches-13945.herokuapp.com/clientMessage', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(message)

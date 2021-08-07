@@ -28,7 +28,7 @@ const AddPortfolio = () => {
         .then(data => setPortfolioImage(data.data.url));
     }
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/addPortfolio', {
+        fetch('https://mighty-reaches-13945.herokuapp.com/addPortfolio', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(portfolioData)

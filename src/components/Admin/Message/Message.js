@@ -6,7 +6,7 @@ const Message = () => {
     const [message, setMessage] = useState([]);
 
     const handleMessageDelete = (id) => {
-        fetch(`http://localhost:5000/deleteMessage/${id}`,{
+        fetch(`https://mighty-reaches-13945.herokuapp.com/deleteMessage/${id}`,{
             method: 'DELETE',
         })
         .then(res => {
@@ -16,7 +16,7 @@ const Message = () => {
         })
     }
     useEffect(() => {
-        fetch('http://localhost:5000/getClientMessage')
+        fetch('https://mighty-reaches-13945.herokuapp.com/getClientMessage')
         .then(response => response.json())
         .then(data => setMessage(data));
     }, []);

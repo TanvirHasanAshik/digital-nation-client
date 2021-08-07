@@ -6,7 +6,7 @@ const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/portfolioData')
+        fetch('https://mighty-reaches-13945.herokuapp.com/portfolioData')
             .then(res => res.json())
             .then(resData => setPortfolio(resData));
     }, []);

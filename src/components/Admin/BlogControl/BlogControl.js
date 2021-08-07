@@ -35,7 +35,7 @@ const BlogControl = () => {
     }
 
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/blog', {
+        fetch('https://mighty-reaches-13945.herokuapp.com/blog', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(blogData)

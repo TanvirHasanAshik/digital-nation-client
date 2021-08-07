@@ -10,7 +10,7 @@ const BusinessPayment = () => {
     const [success, setSuccess] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/businessRecommended/${id}`)
+        fetch(`https://mighty-reaches-13945.herokuapp.com/businessRecommended/${id}`)
             .then(response => response.json())
             .then(data => setBusinessInfo(data))
 
@@ -23,7 +23,7 @@ const BusinessPayment = () => {
         setClientInfo(newClient);
     }
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/recommendedBusinessData', {
+        fetch('https://mighty-reaches-13945.herokuapp.com/recommendedBusinessData', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(clientInfo)

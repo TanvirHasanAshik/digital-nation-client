@@ -17,7 +17,7 @@ const Businesses = () => {
     }
 
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/businesses', {
+        fetch('https://mighty-reaches-13945.herokuapp.com/businesses', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(businessData)

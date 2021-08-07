@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const Recommended = () => {
     const [recommendedData, setRecommendedData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/recommendedBusinessData')
+        fetch('https://mighty-reaches-13945.herokuapp.com/recommendedBusinessData')
             .then(res => res.json())
             .then(data => setRecommendedData(data));
     }, [])

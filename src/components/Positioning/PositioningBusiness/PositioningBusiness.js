@@ -7,7 +7,7 @@ const PositioningBusiness = () => {
     const [businessData, setBusinessData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/businessData')
+        fetch('https://mighty-reaches-13945.herokuapp.com/businessData')
             .then(response => response.json())
             .then(resData => setBusinessData(resData));
     }, [])
